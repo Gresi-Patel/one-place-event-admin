@@ -10,7 +10,7 @@ const ProfileAdmin = () => {
     };
 
     return (
-        <div className="min-h-full bg-gradient-to-br from-indigo-200 via-purple-500 to-pink-200 flex items-center justify-center">
+        <div className="min-h-full bg-gradient-to-br from-indigo-200 via-purple-150 to-pink-200 flex items-center justify-center">
             <div className="bg-white shadow-xl rounded-2xl w-full max-w-3xl p-10">
                 <div className="text-center mb-8">
                     <Rocket className="text-purple-500 text-6xl mb-4" />

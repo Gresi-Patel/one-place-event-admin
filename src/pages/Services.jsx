@@ -56,7 +56,7 @@ const Services = () => {
                 <tr key={service.id} className="text-center hover:bg-gray-50 transition duration-200">
                   <td className="border p-3 text-gray-700 font-medium">{service.name}</td>
                   <td className="border p-3 text-gray-700">{service.description}</td>
-                  <td className="border p-3 text-gray-700">${service.price}</td>
+                  <td className="border p-3 text-gray-700">₹{service.price}</td>
                   <td className="border p-3 text-gray-700">{service.provider.name}</td>
                 </tr>
               ))
