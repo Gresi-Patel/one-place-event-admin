@@ -1,9 +1,9 @@
 import axios from "axios";
-const API_URL = "http://localhost:5000/admin";
-const API_URL2 = "http://localhost:5000/auth";
+const API_URL = "https://backend-999h.onrender.com/admin";
+const API_URL2 = "https://backend-999h.onrender.com/auth";
 // const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MzMxNDUzOCwiZXhwIjoxNzQzMzU3NzM4fQ.NiqGrWp8NQd24_SyITLZyfukyS6TjUWHCOeYDp5jS3E"
 
-// const API_URL = "http://localhost:5000/api/admin"; // Update with your backend URL
+// const API_URL = "https://backend-999h.onrender.com/api/admin"; // Update with your backend URL
 
 export const getUsers = async (token) => {
   return axios.get(`${API_URL}/users`, {
