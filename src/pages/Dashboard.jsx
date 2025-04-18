@@ -39,16 +39,16 @@ const Dashboard = () => {
       try {
         const token = localStorage.getItem("adminToken");
         const [statsRes, trendRes, bookingStatusRes, recentBookingRes] = await Promise.all([
-          axios.get("http://localhost:5000/admin/stats", {
+          axios.get("https://backend-999h.onrender.com/admin/stats", {
             headers: { Authorization: `Bearer ${token}` },
           }),
-          axios.get("http://localhost:5000/admin/event-trends", {
+          axios.get("https://backend-999h.onrender.com/admin/event-trends", {
             headers: { Authorization: `Bearer ${token}` },
           }),
-          axios.get("http://localhost:5000/admin/booking-status_summary", {
+          axios.get("https://backend-999h.onrender.com/admin/booking-status_summary", {
             headers: { Authorization: `Bearer ${token}` },
           }),
-          axios.get("http://localhost:5000/admin/recent-bookings", {
+          axios.get("https://backend-999h.onrender.com/admin/recent-bookings", {
             headers: { Authorization: `Bearer ${token}` },
           })
         ]);
