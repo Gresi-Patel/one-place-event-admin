@@ -25,7 +25,7 @@
 
 
 import { Link } from "react-router-dom";
-import { Dashboard, People, Event, Business, BookOnline} from "@mui/icons-material";
+import { Dashboard, People, Business, BookOnline} from "@mui/icons-material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import LogoutButton from "./LogoutButton";

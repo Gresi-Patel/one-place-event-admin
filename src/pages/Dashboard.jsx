@@ -25,6 +25,7 @@ const Dashboard = () => {
     approved: "#ffc658",
     completed: "#82ca9d",
     confirmed: "#5583e1",
+    pending: "#55bb15",
   };
 
   const COLOR_ARRAY = {
@@ -32,6 +33,7 @@ const Dashboard = () => {
     approved: COLORS.approved,
     completed: COLORS.completed,
     confirmed: COLORS.confirmed,
+    pending: COLORS.pending,
   };
 
   useEffect(() => {
@@ -138,6 +140,10 @@ const Dashboard = () => {
               <div className="flex items-center gap-2">
                 <span className="h-3 w-3 rounded-full" style={{ backgroundColor: COLORS.approved }}></span>
                 <span>Approved</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-3 w-3 rounded-full" style={{ backgroundColor: COLORS.pending }}></span>
+                <span>Pending</span>
               </div>
             </div>
           </div>
