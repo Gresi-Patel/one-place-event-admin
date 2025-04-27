@@ -87,30 +87,28 @@ const Users = () => {
                     {user.role.replace("_", " ")}
                   </td>
                   <td className="border p-3 text-gray-700 capitalize">
-                  {user.status || "Pending"}
+                    {user.status || "Pending"}
                   </td>
                   <td className="border p-3">
                     {user.role === "service_provider" && (
                       <div className="flex justify-center gap-3">
                         <button
                           onClick={() => handleApprove(user.id)}
-                          disabled={user.status === "approved"}
-                          className={`px-4 py-2 rounded-lg shadow-md font-semibold transition ${
-                            user.status === "approved"
+                          disabled={user.status === "approved" || user.status === "rejected"}
+                          className={`px-4 py-2 rounded-lg shadow-md font-semibold transition ${user.status === "approved" || user.status === "rejected"
                               ? "bg-gray-400 text-white cursor-not-allowed"
                               : "bg-green-500 text-white hover:bg-green-600"
-                          }`}
+                            }`}
                         >
                           Approve
                         </button>
                         <button
                           onClick={() => handleReject(user.id)}
-                          disabled={user.status === "rejected"}
-                          className={`px-4 py-2 rounded-lg shadow-md font-semibold transition ${
-                            user.status === "rejected"
+                          disabled={user.status === "approved" || user.status === "rejected"}
+                          className={`px-4 py-2 rounded-lg shadow-md font-semibold transition ${user.status === "approved" || user.status === "rejected"
                               ? "bg-gray-400 text-white cursor-not-allowed"
                               : "bg-red-500 text-white hover:bg-red-600"
-                          }`}
+                            }`}
                         >
                           Reject
                         </button>
